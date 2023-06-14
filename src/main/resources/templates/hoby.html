@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hobynizer</title>
+    <link rel="stylesheet" href="/common.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img class="logoimage" src="/images/Иллюстрация_без_названия (2).png" alt="Hobynizer">
+            </div>
+            <div class="header-nav-bar">
+                <a href="/hoby">Главное</a>
+                <a href="/shop">Магазин</a>
+                <a>Hobynizer Education</a>
+                <a>Блог</a>
+                <a href="/registration">Аккаунт</a>
+                <a href="/login">Вход</a>
+                <a href="/logout" th:if="${userInfo != null}">Выход</a>
+            </div>
+        </div>
+    </header>
+    <section class="landing-block-wrapper">
+        <div class="landing-block-container">
+            <div class="landing-block-text">
+                <h1>Храни</h1>
+                <h1>Используй</h1>
+                <h1>Твори</h1>
+                <h1 th:if="${userInfo != null}">Пользователь: <span th:text="${userInfo}"></span></h1>
+
+            </div>
+            <!-- кнопка сделана плохо, не будет работать если нажать по области а не по тексту -->
+            <button class="transition">
+                <img src="/images/Frame 11.png" alt="">
+            </button>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-block footer-logo">
+                <p>@</p>
+            </div>
+            <div class="footer-block footer-name">
+                <p>Hobynizer.com</p>
+            </div>
+            <div class="footer-block footer-container-social">
+                <p>@</p>
+                <p>@</p>
+                <p>@</p>
+                <p>@</p>
+            </div>
+        </div>
+    </footer>
+    <img class="landing-object" src="/images/landing-obj-1.png" alt="">
+</body></html>

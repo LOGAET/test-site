@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HobyShop</title>
+    <link rel="stylesheet" href="/shop.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img class="logoimage" src="/images/Иллюстрация_без_названия (2).png" alt="Hobynizer">
+            </div>
+            <div class="header-nav-bar">
+                <!-- КВА КВА href это ссылка че над делать -->
+                <a href="/hoby">Главное</a>
+                <a href="/shop">Магазин</a>
+                <a href="/">Hobynizer Education</a>
+                <a href="/">Блог</a>
+                <a href="/registration">Аккаунт</a>
+                <a href="/login">Вход</a>
+                <a href="/logout" th:if="${userInfo != null}">Выход</a>
+            </div>
+        </div>
+    </header>
+    <section class="landing-block-wrapper">
+        <div class="landing-block-container">
+            <div class="landing-block-text">
+                <h1>Hobynizer</h1>
+                <p id="subheading-1" class="shop-subheading">Органайзер для вашего хобби</p>
+            </div>
+            <img class="hobylog" src="/images/Hobynizerv82.1.png" alt="Hobynizer">
+        </div>
+    </section>
+    <section class="shop-block-wrapper">
+        <div class="shop-block-container">
+            <div>
+                <div class="block-region-selection">
+                    <p class="block-region-selection-1">Ваш регион:</p>
+                    <a class="block-region-selection-2" href="">Москва</a>
+                </div>
+                <div class="block-product-info">
+                    <div class="block-product-info-upper">
+                        <div class="block-product-info-upper-row">
+                            <p class="block-product-info-upper-row-heading">Самовывоз из магазина</p>
+                            <div class="block-product-info-upper-row-horizontal">
+                                <p class="block-product-info-upper-row-para">04.06.2023</p>
+                                <p class="block-product-info-upper-row-para">200</p>
+                            </div>
+                        </div>
+                        <div class="block-product-info-upper-row">
+                            <p class="block-product-info-upper-row-heading">Доставка по Москве</p>
+                            <div class="block-product-info-upper-row-horizontal">
+                                <p class="block-product-info-upper-row-para">04.06.2023</p>
+                                <p class="block-product-info-upper-row-para">1000</p>
+                            </div>
+                        </div>
+                        <div class="block-product-info-upper-row">
+                            <p class="block-product-info-upper-row-heading">Доставка в пункт самовывоза</p>
+                            <div class="block-product-info-upper-row-horizontal">
+                                <p class="block-product-info-upper-row-para">500</p>
+                                <p class="block-product-info-upper-row-para">₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-product-info-lower">
+                        <p class="para-regular-1">Оплата</p>
+                        <div class="block-product-info-lower-options">
+                            <p class="para-regular-1">Наличные</p>
+                            <p class="para-regular-1">Карта</p>
+                            <p class="para-regular-1">Электронные деньги</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-block">
+                <p class="pricing-block-stock-para">В наличии</p>
+                <div class="pricing-block-pricing-row">
+                    <h4 class="pricing-block-pricing-text">2500 ₽</h4>
+                    <p class="pricing-block-pricing-subtext">1 шт</p>
+                </div>
+                <button class="button-add-to-cart">
+                    <p class="text-add-to-cart">В корзину</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="product-description" style="display: flex; justify-content: center;">
+        <div style="width: 1000px;" class="product-description-landing">
+            <div class="product-description-text">
+                <h1 id="product-description-text-head">Описание</h1>
+                <p id="product-description-text-body">Ясность нашей позиции очевидна: перспективное планирование
+                    выявляет срочную потребность модели развития. Предварительные выводы неутешительны: постоянное
+                    информационно-пропагандистское обеспечение нашей</p>
+            </div>
+            <img src="/images/Frame 15.png" alt="images">
+        </div>
+    </section>
+    <section class="subscrition-description">
+        <div class="subscrition-description-container">
+            <div class="sub-block subscrition-description-standart">
+                <div class="image-standart">
+                    <img src="/images/Frame 16.png" alt="paz">
+                </div>
+                <div class="subscrition-description-standart-title">
+                    <h1 id="subscrition-description-standart-title1">Hobby</h1>
+                    <h1 id="subscrition-description-standart-title2">STANDART</h1>
+                </div>
+                <div class="price-subscrition-description-standart">
+                    <p id="price1-subscrition-description-standart">499</p>
+                    <p id="price2-subscrition-description-standart">₽/мес</p>
+                </div>
+                <div class="list-subscrition-description-standart">
+                    <p id="first-description-standart">Замена творческого оборудования 2-3 раза в месяц.</p>
+                    <p id="second-description-standart">Получение скидки на любой ассортимент хобинайзер для клиента – 10%.</p>
+                    <p id="third-description-standart">Улучшенная защита и доставка посылок до точки.</p>
+                </div>
+                <div class="button-standart">
+                    <div class="button-text-standart">
+                        <p id="button-text1-standart">Выбрать</p>
+                        <p id="button-text2-standart">+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-block subscrition-description-exclusive">
+                <div class="image-exclusive">
+                    <img src="/images/SubIcon-05.png" alt="v">
+                </div>
+                <div class="subscrition-description-exclusive-title">
+                    <h1 id="subscrition-description-exclusive-title1">Hobby</h1>
+                    <h1 id="subscrition-description-exclusive-title2">EXCLUSIVE</h1>
+                </div>
+                <div class="price-subscrition-description-exclusive">
+                    <p id="price1-subscrition-description-exclusive">1099</p>
+                    <p id="price2-subscrition-description-exclusive">₽/мес</p>
+                </div>
+                <div class="list-subscrition-description-exclusive">
+                    <p id="first-description-exclusive">Замена творческого оборудования до 5 раз в месяц.</p>
+                    <p id="second-description-exclusive">Консультация в специальной и закрытой очереди.</p>
+                    <p id="third-description-exclusive">Ускоренная доставка по любому методы доставки.</p>
+                    <p id="fourth-description-exclusive">Скидка клиента вплоть до 25% (на всю продукцию).</p>
+                    <p id="fifth-description-exclusive">Возможность заказа премиум стилей и дизайнов на продукцию.</p>
+                </div>
+                <div class="button-exclusive">
+                    <div class="button-text-exclusive">
+                        <p id="button-text1-exclusive">Выбрать</p>
+                        <p id="button-text2-exclusive">+</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" sub-block subscrition-description-premium">
+                <div class="subscrition-description-premium">
+                    <div class="image-premium">
+                        <img src="/images/SubIcon-06.png" alt="v">
+                    </div>
+                    <div class="subscrition-description-premium-title">
+                        <h1 id="subscrition-description-premium-title1">Hobby</h1>
+                        <h1 id="subscrition-description-premium-title2">PREMIUM</h1>
+                    </div>
+                    <div class="price-subscrition-description-premium">
+                        <p id="price1-subscrition-description-premium">1999</p>
+                        <p id="price2-subscrition-description-premium">₽/мес</p>
+                    </div>
+                    <div class="list-subscrition-description-premium">
+                        <p id="first-description-premium">Скидки до 50%.</p>
+                        <p id="second-description-premium">Неограниченная замена оборудования в течение месяца.</p>
+                        <p id="third-description-premium">Доступ к специальным мастер-обучающим-классам у профессиональных художников/скетчеров.</p>
+                        <p id="fourth-description-premium">Полная защита посылок и максимальный приоритет на качестве и скорости доставки до клиента</p>
+                        <p id="fifth-description-premium">Консультации с нулевой очередью.</p>
+                    </div>
+                    <div class="button-premium">
+                        <div class="button-text-premium">
+                            <p id="button-text1-premium">Выбрать</p>
+                            <p id="button-text2-premium">+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-block footer-logo">
+                <p>@</p>
+            </div>
+            <div class="footer-block footer-name">
+                <p>Hobynizer.com</p>
+            </div>
+            <div class="footer-block footer-container-social">
+                <p>@</p>
+                <p>@</p>
+                <p>@</p>
+                <p>@</p>
+            </div>
+        </div>
+    </footer>
+
+</body></html>

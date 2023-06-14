@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf), url(font/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Bluecurve;
+    src: url(fonts/Bluecurve-Regular.ttf), url(fonts/Bluecurve-Light.ttf), url(fonts/Bluecurve-Bold.ttf);
+}
+
+@font-face {
+    font-family: Blackberry;
+    src: url(fonts/blackberry-normal_version_02.otf);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+h1 {
+    font-family: Blackberry, sans-serif;
+    color: white;
+    font-size: 128px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cta-button-wrapper {
+    background: aqua;
+    padding: 8px 16px;
+    width: min-content;
+    border-radius: 4px;
+}
+
+.cta-button {
+
+}
+
+.header-container {
+    width: 800px;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.logoimage
+{
+    height: 150px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    transition: 200ms;
+    color: black;
+    cursor: pointer;
+}
+
+section.landing-block-wrapper {
+    width: 100%;
+    min-height: 500px;
+    height: calc(100vh - 80px);
+    background-image: url('images/landing-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.transition
+{
+    padding: 0;
+    border: 0;
+    display: flex;
+    width: min-content;
+    width: min-content;
+}
+
+.landing-block-container {
+    padding: 64px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+footer {
+    background: #212121;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer-block {
+    display: flex;
+    align-items: center;
+    flex-basis: 33.3%;
+    align-items: center;
+}
+
+.footer-container-social {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.footer-name {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container-social {
+    display: flex;
+    justify-content: right;
+}
+
+p {
+    margin: 0;
+}
+
+.landing-block-text {
+    z-index: 10;
+}
+
+.landing-object {
+    position: absolute;
+    top: calc(100px + 5vh);
+    right: 5vw;
+    max-width: 50%;
+}
+
+a {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+}
